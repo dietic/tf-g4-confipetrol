@@ -8,6 +8,8 @@ import {AppRoutingModule} from "./app-routing.module";
 import { TestSingleComponent } from './pages/test/test-single/test-single.component';
 import { UserListComponent } from './pages/user/user-list/user-list.component';
 import { UserLoginComponent } from './access/user/user-login/user-login.component';
+import { ContactusComponent } from './pages/contactus/contactus.component';
+import { AboutusComponent } from './pages/aboutus/aboutus.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { UserLoginComponent } from './access/user/user-login/user-login.componen
     TestListComponent,
     TestSingleComponent,
     UserListComponent,
-    UserLoginComponent
+    UserLoginComponent,
+    ContactusComponent,
+    AboutusComponent
   ],
   imports: [
     BrowserModule,
