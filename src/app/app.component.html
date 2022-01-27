@@ -1,12 +1,20 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-bottom">
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
   <a class="navbar-brand" href="#">CONFIPETROL</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-      <li class="nav-item">
-        <a class="nav-link" routerLink="tests">Pruebas</a>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="testDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Pruebas
+        </a>
+        <div class="dropdown-menu" aria-labelledby="testDropdown">
+          <a class="dropdown-item" routerLink="tests">Lista</a>
+          <a class="dropdown-item" routerLink="test/new">Nueva prueba</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" routerLink="test/list/1">Buscar</a>
+        </div>
       </li>
       <li class="nav-item">
         <a class="nav-link" routerLink="users">Usuarios</a>

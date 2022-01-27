@@ -6,11 +6,13 @@ import {UserListComponent} from "./pages/user/user-list/user-list.component";
 import { AboutusComponent } from "./pages/aboutus/aboutus.component";
 import { LoginComponent } from "./pages/login/login.component";
 import { ContactusComponent } from "./pages/contactus/contactus.component";
+import {TestNewComponent} from "./pages/test/test-new/test-new.component";
 
 const routes: Routes = [
   { path: "users", component: UserListComponent},
   { path: "tests", component: TestListComponent},
-  { path: "test/:id", component: TestSingleComponent},
+  { path: "test/new", component: TestNewComponent},
+  { path: "test/list/:id", component: TestSingleComponent},
   { path: "", redirectTo: "tests", pathMatch: "full"},
   { path: "aboutus", component: AboutusComponent},
   { path: "login", component: LoginComponent},
